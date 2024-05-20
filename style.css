@@ -44,3 +44,10 @@ img {
 li {
   list-style: none;
 }
+
+@media only screen and (max-width: 600px) {
+  /* 画面幅が600px以下の場合のスタイル */
+  body {
+    font-size: 1.4rem; /* スマートフォンなどの小さい画面用のフォントサイズを14px相当に設定 */
+  }
+}
