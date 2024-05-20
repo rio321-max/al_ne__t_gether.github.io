@@ -10,7 +10,13 @@ body {
 }
 a {
   text-decoration: none;
+  a:hover{
+    color: #ff002b;
+    a:visited{
+    color: #0000ff;
+ }
 }
+  
 img {
   max-width: 100%;
 }
@@ -19,12 +25,9 @@ li {
 }
 
 
-a:hover{
-    color: #ff002b;
-}
 
-a:visited{
-    color: #0000ff;
+
+
 }
 
 .wrapper {
