@@ -10,6 +10,7 @@ p {
 
 h1 { 
   font-size: 5.6rem; /* font-size: 56px と同等 */
+  font-weight: normal;
 }
 
 h2 { 
