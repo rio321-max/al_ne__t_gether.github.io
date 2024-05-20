@@ -1,34 +1,43 @@
 html {
-font-size: 62.5%;  /* font-sizeは16pxの62.5%の10px */
-font-family: 'Yu Gothic',sans-serif;
-font-weight: 300
+  font-size: 62.5%;  /* font-sizeは16pxの62.5%の10px */
+  font-family: 'Yu Gothic', sans-serif;
+  font-weight: 300;
 }
 
-p { font-size: 1.4rem; } /*font-size : 14px と同等*/
-h1 { font-size: 5.6rem; } /* font-size: 56px と同等 */
-h2 { font-size: 2.8rem; } /* font-size: 28px と同等 */
+p { 
+  font-size: 1.4rem; /* font-size : 14px と同等 */
+}
 
-  
+h1 { 
+  font-size: 5.6rem; /* font-size: 56px と同等 */
+}
+
+h2 { 
+  font-size: 2.8rem; /* font-size: 28px と同等 */
+}
+
 body {
   color: #24292e;
   margin: 40px;   /* 外側の余白を40pxにする */
   padding: 0;      /* 内側の余白を消す(念のため) */
 }
+
 a {
   text-decoration: none;
-  hover{
-    color: #ff002b;
-  visited{
-    color: #0000ff;
- }
 }
-  
+
+a:hover {
+  color: #ff002b;
+}
+
+a:visited {
+  color: #0000ff;
+}
+
 img {
   max-width: 100%;
 }
+
 li {
   list-style: none;
 }
-
-}
-</style>
