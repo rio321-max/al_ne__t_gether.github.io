@@ -3,10 +3,11 @@
 html {
   font-family: 'Yu Gothic',sans-serif;
 }
-  font-size: 10px;
+  
 }
 body {
   color: #24292e;
+  font-size: 10px;
 }
 a {
   text-decoration: none;
