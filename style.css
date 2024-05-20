@@ -18,6 +18,14 @@ li {
   list-style: none;
 }
 
+a:hover{
+    color: #0000ff;
+}
+
+a:visited{
+    color: #0000ff;
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto 130px auto;
