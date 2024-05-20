@@ -22,6 +22,9 @@ body {
   color: #24292e;
   margin: 40px;   /* 外側の余白を40pxにする */
   padding: 0;      /* 内側の余白を消す(念のため) */
+  max-width: 1200px;
+  margin: 0 auto; /* コンテンツを中央に配置するためのマージン */
+}
 }
 
 a {
