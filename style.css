@@ -33,7 +33,7 @@ a:hover {
 }
 
 a:visited {
-  color: #0000ff;
+  color: inherit; /* 親要素の色を継承する */
 }
 
 img {
