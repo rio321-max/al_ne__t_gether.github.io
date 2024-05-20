@@ -7,6 +7,8 @@ html {
 }
 body {
   color: #24292e;
+  margin: 40px;   /* 外側の余白を40pxにする */
+  padding: 0;      /* 内側の余白を消す(念のため) */
 }
 a {
   text-decoration: none;
@@ -24,10 +26,5 @@ li {
   list-style: none;
 }
 
-
-<style type="text/css">
-body {
-   margin: 40px;   /* 外側の余白を40pxにする */
-   padding: 0;      /* 内側の余白を消す(念のため) */
 }
 </style>
