@@ -17,9 +17,9 @@ body {
 }
 a {
   text-decoration: none;
-  a:hover{
+  hover{
     color: #ff002b;
-  a:visited{
+  visited{
     color: #0000ff;
  }
 }
