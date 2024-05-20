@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-body {
-   margin: 40px;   /* 外側の余白を40pxにする */
-   padding: 0;      /* 内側の余白を消す(念のため) */
-}
-
 html {
   font-family: 'Yu Gothic',sans-serif;
 }
@@ -13,6 +8,8 @@ html {
 body {
   color: #24292e;
   font-size: 100px;
+  margin: 40px;   /* 外側の余白を40pxにする */
+padding: 0;      /* 内側の余白を消す(念のため) */
 }
 a {
   text-decoration: none;
