@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+html {
 font-family: 'Yu Gothic',sans-serif;
 font-weight: 300
 font-size: 62.5%; } /* font-sizeは16pxの62.5%の10px */
-body { font-size: 1.4rem; } /*font-size : 14px と同等*/
+}
+
+p { font-size: 1.4rem; } /*font-size : 14px と同等*/
 h1 { font-size: 5.6rem; } /* font-size: 56px と同等 */
 h2 { font-size: 2.8rem; } /* font-size: 28px と同等 */
 
