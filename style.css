@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-html {
+<style type="text/css">
   font-family: 'Yu Gothic',sans-serif;
   font-weight: 300
   font-size: 62.5%; } /* font-sizeは16pxの62.5%の10px */
