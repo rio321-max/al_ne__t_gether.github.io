@@ -30,6 +30,10 @@ a {
   text-decoration: underline;
 }
 
+a {
+  color: blue; /* リンクの色を赤に変更 */
+}
+
 a:hover {
   color: #ff002b;
 }
