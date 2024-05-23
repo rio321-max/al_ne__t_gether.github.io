@@ -47,7 +47,7 @@ li {
 }
 
 #footer {
-    margin: 20px 0px;
+  margin-top: 20px; /* 上側のマージン */
 }
 
 @media only screen and (max-width: 600px) {
