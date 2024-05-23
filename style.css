@@ -70,6 +70,11 @@ li {
   display: block; /* インライン要素ではなく、ブロック要素として画像を表示 */
 }
 
+.caption {
+  margin-left: 0px; /* キャプションの左側に10pxの余白を追加 */
+  margin-right: 0px; /* キャプションの右側に10pxの余白を追加 */
+  margin-top: 0px;
+}
 
 @media only screen and (max-width: 600px) {
   /* 画面幅が600px以下の場合のスタイル */
