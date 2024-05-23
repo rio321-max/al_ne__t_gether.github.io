@@ -61,20 +61,20 @@ li {
 }
 
 .portfolio-item {
+  font-size: 0; /* 子要素のフォントサイズをリセット */
 }
 
 .portfolio-item img {
-  width: 70%; /* 画像を親要素の幅に合わせる */
-  height: auto; /* アスペクト比を保持するために高さを自動に設定 */
-  display: block; /* インライン要素ではなく、ブロック要素として画像を表示 */
+  display: inline-block; /* インラインブロック要素として設定 */
+  vertical-align: middle; /* 垂直方向の中央揃え */
 }
 
 .caption {
-  font-size: 1.4rem; /* font-size: 28px と同等 */
+  display: inline-block; /* インラインブロック要素として設定 */
+  font-size: 1.4rem; /* キャプションのフォントサイズ */
   font-weight: normal;
-  mmargin: 0
+  margin: 0; /* キャプションの上下左右の余白をゼロに設定 */
 }
-
 @media only screen and (max-width: 600px) {
   /* 画面幅が600px以下の場合のスタイル */
   body {
