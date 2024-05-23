@@ -64,16 +64,20 @@ li {
   font-size: 0; /* 子要素のフォントサイズをリセット */
 }
 
+.portfolio-item {
+  font-size: 0; /* 子要素のフォントサイズをリセット */
+}
+
 .portfolio-item img {
-  display: inline-block; /* インラインブロック要素として設定 */
-  vertical-align: middle; /* 垂直方向の中央揃え */
+  display: block; /* ブロック要素として設定 */
+  font-size: 0; /* 画像の周りの余白をなくすためにフォントサイズをリセット */
 }
 
 .caption {
-  display: inline-block; /* インラインブロック要素として設定 */
+  display: block; /* ブロック要素として設定 */
   font-size: 1.4rem; /* キャプションのフォントサイズ */
   font-weight: normal;
-  margin: 0; /* キャプションの上下左右の余白をゼロに設定 */
+  margin-top: -4px; /* キャプションの上側のマージンを負の値で設定 */
 }
 @media only screen and (max-width: 600px) {
   /* 画面幅が600px以下の場合のスタイル */
