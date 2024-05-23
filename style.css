@@ -66,9 +66,9 @@ li {
 
 .portfolio-item img {
   display: block; /* ブロック要素として設定 */
-  width: 100%; /* 親要素に合わせて幅を調整 */
+  width: 70%; /* 親要素に合わせて幅を調整 */
   height: auto; /* アスペクト比を保持するために高さを自動に設定 */
-  margin-bottom: -4px; /* 画像の下側の余白を調整 */
+  margin-bottom: -10px; /* 画像の下側の余白を調整 */
 }
 
 .caption {
