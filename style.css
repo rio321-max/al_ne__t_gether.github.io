@@ -71,6 +71,8 @@ li {
 }
 
 .caption {
+  font-size: 1.4rem; /* font-size: 28px と同等 */
+  font-weight: normal;
   margin-left: 0px; /* キャプションの左側に10pxの余白を追加 */
   margin-right: 0px; /* キャプションの右側に10pxの余白を追加 */
   margin-top: 0px;
