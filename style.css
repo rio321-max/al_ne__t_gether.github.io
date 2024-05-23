@@ -73,7 +73,7 @@ li {
 
 .caption {
   display: block; /* ブロック要素として設定 */
-  font-size: 1.0rem; /* キャプションのフォントサイズ */
+  font-size: 0.5rem; /* キャプションのフォントサイズ */
   font-weight: normal;
   margin: 0; /* キャプションの余白をリセット */
 }
