@@ -31,7 +31,7 @@ a {
 }
 
 a {
-  color: blue; 
+  color: #0000ff; 
 }
 
 a:hover {
@@ -39,7 +39,7 @@ a:hover {
 }
 
 a:visited {
-  color: blue; /* 親要素の色を継承する */
+  color: #0000ff; /* 親要素の色を継承する */
 }
 
 img {
