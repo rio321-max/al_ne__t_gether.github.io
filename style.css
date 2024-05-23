@@ -54,6 +54,38 @@ li {
   margin-top: 20px; /* 上側のマージン */
 }
 
+.container {
+  max-width: 800px; /* コンテンツの最大幅 */
+  margin: 0 auto; /* 中央に配置 */
+  padding: 20px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-item img {
+  width: 100%; /* 画像を親要素の幅に合わせる */
+  height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+  display: block; /* インライン要素ではなく、ブロック要素として画像を表示 */
+}
+
+.caption {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.caption h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+
 @media only screen and (max-width: 600px) {
   /* 画面幅が600px以下の場合のスタイル */
   body {
