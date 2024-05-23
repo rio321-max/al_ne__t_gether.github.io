@@ -1,7 +1,7 @@
 html {
-  font-size: 62.5%;  /* font-sizeは16pxの62.5%の10px */
+  font-size: 50%;  /* font-sizeは16pxの62.5%の10px */
   font-family: 'Yu Gothic', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 p { 
