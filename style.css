@@ -61,7 +61,6 @@ li {
 }
 
 .portfolio-item {
-  font-size: 0; /* 子要素のフォントサイズをリセット */
 }
 
 .portfolio-item img {
