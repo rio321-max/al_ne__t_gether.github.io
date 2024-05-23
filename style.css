@@ -70,10 +70,6 @@ li {
   display: block; /* インライン要素ではなく、ブロック要素として画像を表示 */
 }
 
-.caption {
-  font-size: 1.2rem; /* キャプションの文字の大きさを1.2remに設定 */
-}
-
 
 @media only screen and (max-width: 600px) {
   /* 画面幅が600px以下の場合のスタイル */
