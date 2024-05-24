@@ -10,11 +10,17 @@
 .image-block {
   max-width: 70%; /* 全体の幅を70%に制限 */
   margin: 0 auto; /* 中央寄せ */
+  display: flex; /* 画像を横並びに配置 */
+  flex-wrap: wrap; /* 画像が行を超えた場合に折り返す */
 }
 .image-block img {
-  width: 100%; /* ブロック全体の幅を100%に設定 */
+  width: calc(25% - 10px); /* ブロック全体の幅を4分割し、間隔を考慮 */
   height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+  margin-right: 10px; /* 画像の右側の余白を調整 */
   margin-bottom: 10px; /* 画像の下側の余白を調整 */
+}
+.image-block img:last-child {
+  margin-right: 0; /* 最後の画像には右側の余白を適用しない */
 }
 .portfolio-image img {
   display: block; /* ブロック要素として設定 */
