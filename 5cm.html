@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>5cm×5cm</title>
   <link rel="stylesheet" href="style.css">
+   <style>
+    /* 新しいクラスのスタイル */
+    .image-container {
+      display: flex; /* 画像を横並びに配置 */
+    }
+    .image-container img {
+      flex: 1; /* 画像を均等に横並びに配置 */
+      margin: 0 5px; /* 画像間の間隔を設定 */
+    }
+  </style>
 </head>
 <body>
   <p>①葉っぱを探す<br />②﻿﻿5cm✕5cmの正方形に切り抜く<br />③それをどこかに見立てる</p>
-  <div class="portfolio-item">
-      <img src="img/51.jpeg" alt="Portfolio Image">
-  </div>
-
-    <div class="portfolio-item">
+  <!-- 新しいクラスを適用 -->
+  <div class="image-container">
       <img src="img/52.png" alt="Portfolio Image">
       <img src="img/53.jpeg" alt="Portfolio Image">
       <img src="img/54.png" alt="Portfolio Image">
