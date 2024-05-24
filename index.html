@@ -15,29 +15,46 @@
         margin: 20px 20px; /* 左右に20pxの空白を追加 */
       }
     </style>
-  </head>
+<script>
+    // ランダムに表示するURLのリストを定義
+    const urls = [
+      'https://example.com/page1',
+      'https://example.com/page2',
+      'https://example.com/page3',
+      'https://example.com/page4'
+    ];
 
-  <body>
-    <header id="header">
-      <h1 class="site-title"><a href="index.html"><img src="img/ssee3.png" alt="al_ne__t_gether"></a></h1>
-      <nav>
-        <ul>
-          <li><a href="k_t_.html"><p>こと</p></a>
-          <li><a href="m_n_.html"><p>もの</p></a>
-          <li><a href="others.html"><p>とか</p></a>
-          <li><a href=""><p>プ（ランダムで表示）</p></a>
-          <li><a href="mtu.html"><p>受け止められなさを動かす</p></a></li>
-          <li><a href="https://www.instagram.com/al_ne__t_gether/" target="_blank"><p>Instagram</p></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    // リストからランダムにURLを選択する関数
+    function getRandomUrl(urls) {
+      const randomIndex = Math.floor(Math.random() * urls.length);
+      return urls[randomIndex];
+    }
 
-  
-    <footer id="footer">
-      <p>&copy; 2024 al_ne__t_gether</p>
-    </footer>
+    // ページ読み込み時にランダムなURLをリンクに設定
+    document.addEventListener('DOMContentLoaded', () => {
+      const randomLink = document.getElementById('random-link');
+      randomLink.href = getRandomUrl(urls);
+    });
+  </script>
+</head>
 
-  </body>
+<body>
+  <header id="header">
+    <h1 class="site-title"><a href="index.html"><img src="img/ssee3.png" alt="al_ne__t_gether"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="k_t_.html"><p>こと</p></a></li>
+        <li><a href="m_n_.html"><p>もの</p></a></li>
+        <li><a href="others.html"><p>とか</p></a></li>
+        <li><a id="random-link" href=""><p>プ（ランダムで表示）</p></a></li>
+        <li><a href="mtu.html"><p>受け止められなさを動かす</p></a></li>
+        <li><a href="https://www.instagram.com/al_ne__t_gether/" target="_blank"><p>Instagram</p></a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <footer id="footer">
+    <p>&copy; 2024 al_ne__t_gether</p>
+  </footer>
+</body>
 </html>
