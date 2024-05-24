@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="random-image-container">
+    <!-- ここにランダムな画像が表示されます -->
+  </div>
+
+  <script>
+    // 画像のURLのリストを定義
+    const imageUrls = [
+      'F-ZPluUbwAAoixu.jpeg',
+      'F7mahYcbgAAGc-5.jpeg',
+      'image3.jpg',
+      // 他の画像のURLを追加
+    ];
+
+    // ページ読み込み時にランダムな画像を選択して表示
+    document.addEventListener('DOMContentLoaded', () => {
+      // 画像を表示するコンテナの要素を取得
+      const imageContainer = document.getElementById('random-image-container');
+      // ランダムな画像を選択
+      const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+      // img要素を作成してランダムな画像を表示
+      const imgElement = document.createElement('img');
+      imgElement.src = randomImageUrl;
+      imageContainer.appendChild(imgElement);
+    });
+  </script>
+</body>
+</html>
