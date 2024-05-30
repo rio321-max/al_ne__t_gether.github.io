@@ -5,41 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>オブセッションと渋谷についての制作</title>
   <link rel="stylesheet" href="style.css">
-   <style>
- /* 新しいクラスのスタイル */
-.portfolio-image img {
-  display: block; /* ブロック要素として設定 */
-  width: 70%; /* 親要素に合わせて幅を70%に設定 */
-  height: auto; /* アスペクト比を保持するために高さを自動に設定 */
-  margin-bottom: 10px; /* 下側に余白を設定 */
-}
+  <style>
+    /* 新しいクラスのスタイル */
+    .portfolio-image img {
+      display: block; /* ブロック要素として設定 */
+      width: 70%; /* 親要素に合わせて幅を70%に設定 */
+      height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+      margin-bottom: 10px; /* 下側に余白を設定 */
+    }
 
-a {
-  color: black; /* デフォルトのリンクの色を黒色に設定 */
-  text-decoration: underline; /* リンクに下線を付ける */
-}
+    a {
+      color: blue; /* デフォルトのリンクの色を青色に設定 */
+      text-decoration: underline; /* リンクに下線を付ける */
+    }
 
-/* フッター内のリンクのスタイルを青色に設定 */
-#footer a {
-  color: blue !important; /* フッター内のリンクの色を青色に設定 */
-}
+    /* フッター内のリンクのスタイルを青色に設定 */
+    #footer a {
+      color: blue; /* フッター内のリンクの色を青色に設定 */
+    }
+
+    /* 特定のクラスに対してリンクの色を黒に設定 */
+    .black-link {
+      color: black !important; /* 強制的に黒色に設定 */
+    }
   </style>
 </head>
 <body>
-  
-   <div class="portfolio-item">
+  <div class="portfolio-item">
     <a href="https://www.youtube.com/watch?v=N2rxmBqjObo">
       <img src="img/keisokusam.jpeg" alt="Portfolio Image">
     </a>
     <div class="caption">
-      <li><a href="https://www.youtube.com/watch?v=N2rxmBqjObo"><p>《感覚地図のための計測》, 2023 ビデオ</p></a></li>
+      <li><a href="https://www.youtube.com/watch?v=N2rxmBqjObo" class="black-link"><p>《感覚地図のための計測》, 2023 ビデオ</p></a></li>
     </div>
-</div>
+  </div>
 
- <footer id="footer">
+  <footer id="footer">
     <p><a href="m_n_.html">back</a></p>
     <p>&copy; 2024 al_ne__t_gether</p>
-</footer>
+  </footer>
 </body>
 </html>
 
