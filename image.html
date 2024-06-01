@@ -5,9 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    img {
-      max-width: 80%;
-      height: auto;
+    #random-image-container img {
+      width: 100vw;  /* 幅をデバイスの幅に合わせる */
+      height: 100vh; /* 高さをデバイスの高さに合わせる */
+    }
+
+    @media only screen and (min-width: 600px) {
+      /* 画面幅が600px以上の場合のスタイル */
+      #random-image-container img {
+        width: 100vw;  /* 幅をデバイスの幅に合わせる */
+        height: 100vh; /* 高さをデバイスの高さに合わせる */
+      }
     }
   </style>
 </head>
@@ -48,3 +56,4 @@
   
 </body>
 </html>
+
