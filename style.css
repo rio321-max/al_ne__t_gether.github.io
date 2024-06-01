@@ -87,12 +87,12 @@ li {
         font-size: 0.8rem; /* pタグの文字サイズを小さく */
       }
 
-     .portfolio-item img {
-  display: block; /* ブロック要素として設定 */
-  width: 100%; /* 親要素に合わせて幅を調整 */
-  height: auto; /* アスペクト比を保持するために高さを自動に設定 */
-  margin-bottom: -5px; /* 画像の下側の余白を調整 */
-}
+     　.portfolio-item img {
+ 　　　　　　　　　　　　 display: block; /* ブロック要素として設定 */
+        width: 100%; /* 親要素に合わせて幅を調整 */
+        height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+        margin-bottom: -5px; /* 画像の下側の余白を調整 */
+      }
 
       .caption {
         font-size: 0.8rem; /* キャプションのフォントサイズを小さく */
