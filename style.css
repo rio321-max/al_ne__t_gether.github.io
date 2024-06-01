@@ -77,15 +77,22 @@ li {
   margin: 0; /* キャプションの余白をリセット */
 }
 
-@media only screen and (max-width: 600px) {
-  /* 画面幅が600px以下の場合のスタイル */
-  body {
-  
-  .portfolio-item img {
-    width: 100%; /* 親要素に合わせて幅を100%に設定 */
-  }
+ @media only screen and (max-width: 600px) {
+      /* 画面幅が600px以下の場合のスタイル */
+      body {
+        font-size: 65%; /* ここは任意で調整 */
+      }
 
-  .caption {
-    font-size: 0.8rem; /* キャプションのフォントサイズを小さく */
-  }
-}
+      p {
+        font-size: 0.8rem; /* pタグの文字サイズを小さく */
+      }
+
+      .portfolio-item img {
+        width: 100%; /* 親要素に合わせて幅を100%に設定 */
+      }
+
+      .caption {
+        font-size: 0.8rem; /* キャプションのフォントサイズを小さく */
+      }
+    }
+  </style>
