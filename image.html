@@ -9,25 +9,41 @@
       margin: 0;
       padding: 0;
       overflow: hidden; /* スクロールを無効にする */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* 高さをデバイスの高さに合わせる */
     }
 
     #random-image-container {
+      width: 100vw;  /* 幅をデバイスの幅に合わせる */
+      height: 100vh; /* 高さをデバイスの高さに合わせる */
       display: none; /* デフォルトで非表示 */
     }
 
+    #random-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* 画像がコンテナを覆うように調整 */
+    }
+
+    @media only screen and (min-width: 600px) {
+      #random-image-container {
+        display: none; /* パソコンで表示されないように */
+      }
+    }
+
     @media only screen and (max-width: 600px) {
-      body {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100vw; /* 幅をデバイスの幅に合わせる */
-        height: 100vh; /* 高さをデバイスの高さに合わせる */
+      #random-image-container {
+        display: block; /* スマートフォンで表示されるように */
       }
     }
   </style>
 </head>
 <body>
-  <div id="random-image-container"></div>
+  <div id="random-image-container">
+    <!-- ここにランダムな画像が表示されます -->
+  </div>
 
   <script>
     // 画像のURLのリストを定義
@@ -45,10 +61,14 @@
     document.addEventListener('DOMContentLoaded', () => {
       // 画面幅が600px以下の場合のみ実行
       if (window.innerWidth <= 600) {
+        // 画像を表示するコンテナの要素を取得
+        const imageContainer = document.getElementById('random-image-container');
         // ランダムな画像を選択
         const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
-        // body要素の背景画像として設定
-        document.body.style.backgroundImage = `url(${randomImageUrl})`;
+        // img要素を作成してランダムな画像を表示
+        const imgElement = document.createElement('img');
+        imgElement.src = randomImageUrl;
+        imageContainer.appendChild(imgElement);
       }
     });
   </script>
