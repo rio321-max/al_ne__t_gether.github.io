@@ -8,17 +8,18 @@
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden; /* スクロールを無効にする */
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh; /* 高さをデバイスの高さに合わせる */
+      overflow: hidden; /* スクロールを無効にする */
     }
 
     #random-image-container {
+      position: relative;
       width: 100vw;  /* 幅をデバイスの幅に合わせる */
       height: 100vh; /* 高さをデバイスの高さに合わせる */
-      display: none; /* デフォルトで非表示 */
+      overflow: hidden; /* コンテナ内でスクロールを無効にする */
     }
 
     #random-image-container img {
@@ -27,15 +28,31 @@
       object-fit: cover; /* 画像がコンテナを覆うように調整 */
     }
 
+    #footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5); /* 背景を半透明に設定 */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
     @media only screen and (min-width: 600px) {
+      /* 画面幅が600px以上の場合のスタイル */
       #random-image-container {
         display: none; /* パソコンで表示されないように */
       }
     }
 
     @media only screen and (max-width: 600px) {
+      /* 画面幅が600px以下の場合のスタイル */
       #random-image-container {
         display: block; /* スマートフォンで表示されるように */
+      }
+
+      body {
+        overflow: scroll; /* スマートフォンではスクロールを有効にする */
       }
     }
   </style>
@@ -43,6 +60,10 @@
 <body>
   <div id="random-image-container">
     <!-- ここにランダムな画像が表示されます -->
+    <footer id="footer">
+      <p><a href="others.html" style="color: white;">back</a></p>
+      <p>&copy; 2024 al_ne__t_gether</p>
+    </footer>
   </div>
 
   <script>
@@ -72,11 +93,6 @@
       }
     });
   </script>
-  
-  <footer id="footer">
-    <p><a href="others.html">back</a></p>
-    <p>&copy; 2024 al_ne__t_gether</p>
-  </footer>  
   
 </body>
 </html>
