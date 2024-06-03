@@ -5,24 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    #random-image-container img {
-      width: 100vw;  /* 幅をデバイスの幅に合わせる */
-      height: 100vh; /* 高さをデバイスの高さに合わせる */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* スクロールを無効にする */
     }
 
-    @media only screen and (min-width: 600px) {
-      /* 画面幅が600px以上の場合のスタイル */
-      #random-image-container img {
-        width: 100vw;  /* 幅をデバイスの幅に合わせる */
+    #random-image-container {
+      display: none; /* デフォルトで非表示 */
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw; /* 幅をデバイスの幅に合わせる */
         height: 100vh; /* 高さをデバイスの高さに合わせる */
       }
     }
   </style>
 </head>
 <body>
-  <div id="random-image-container">
-    <!-- ここにランダムな画像が表示されます -->
-  </div>
+  <div id="random-image-container"></div>
 
   <script>
     // 画像のURLのリストを定義
@@ -38,22 +43,20 @@
 
     // ページ読み込み時にランダムな画像を選択して表示
     document.addEventListener('DOMContentLoaded', () => {
-      // 画像を表示するコンテナの要素を取得
-      const imageContainer = document.getElementById('random-image-container');
-      // ランダムな画像を選択
-      const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
-      // img要素を作成してランダムな画像を表示
-      const imgElement = document.createElement('img');
-      imgElement.src = randomImageUrl;
-      imageContainer.appendChild(imgElement);
+      // 画面幅が600px以下の場合のみ実行
+      if (window.innerWidth <= 600) {
+        // ランダムな画像を選択
+        const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+        // body要素の背景画像として設定
+        document.body.style.backgroundImage = `url(${randomImageUrl})`;
+      }
     });
   </script>
   
- <footer id="footer">
+  <footer id="footer">
     <p><a href="others.html">back</a></p>
     <p>&copy; 2024 al_ne__t_gether</p>
- </footer>  
+  </footer>  
   
 </body>
 </html>
-
