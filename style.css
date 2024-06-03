@@ -88,7 +88,7 @@ li {
     display: block; /* ブロック要素として設定 */
     width: 100%; /* 親要素に合わせて幅を100%に設定 */
     height: auto; /* アスペクト比を保持するために高さを自動に設定 */
-    margin-bottom: -5px; /* 画像の下側の余白を調整 */
+    margin-bottom: -7px; /* 画像の下側の余白を調整 */
   }
 
   .caption {
