@@ -6,17 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     #random-image-container img {
-      width: calc(100vw - 20px);  /* 幅をデバイスの幅に合わせる (左右に20pxずつのマージンを考慮) */
+      display: block; /* ブロックレベルの要素に設定 */
+      width: calc(100vw - 40px);  /* 幅をデバイスの幅に合わせる (左右に20pxずつのパディングを考慮) */
       height: auto; /* 高さを自動に設定 */
-      margin: 10px 0px; /* 上下のマージンを10px、左右のマージンを20pxに設定 */
+      margin: 10px auto 10px 20px; /* 上下のマージンを10px、左のマージンを20pxに設定 */
     }
 
     @media only screen and (min-width: 600px) {
       /* 画面幅が600px以上の場合のスタイル */
       #random-image-container img {
-        width: calc(100vw - 40px);  /* 幅をデバイスの幅に合わせる (左右に20pxずつのマージンを考慮) */
+        display: block; /* ブロックレベルの要素に設定 */
+        width: calc(100vw - 40px);  /* 幅をデバイスの幅に合わせる (左右に20pxずつのパディングを考慮) */
         height: auto; /* 高さを自動に設定 */
-        margin: 10px 20px; /* 上下のマージンを10px、左右のマージンを20pxに設定 */
+        margin: 10px auto 10px 20px; /* 上下のマージンを10px、左のマージンを20pxに設定 */
       }
     }
   </style>
@@ -55,7 +57,5 @@
     <p><a href="others.html">back</a></p>
     <p>&copy; 2024 al_ne__t_gether</p>
  </footer>  
-  
 </body>
 </html>
-
