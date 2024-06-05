@@ -32,6 +32,24 @@
   margin-left: 0; /* 左のマージンを0に設定 */
 }
 
+/* YouTube動画のコンテナ */
+.youtube-container {
+  position: relative;
+  width: 70%;
+  padding-bottom: 56.25%; /* YouTubeのアスペクト比16:9に対応 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
+/* YouTube動画 */
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 600px) {
   .portfolio-image img {
     width: 100%; /* 親要素に合わせて幅を100%に設定 */
@@ -42,6 +60,9 @@
   }
   .portfolio-text {
     max-width: 100%; /* テキストの幅を100%に制限 */
+  }
+  .youtube-container {
+    width: 100%; /* 親要素に合わせて幅を100%に設定 */
   }
 }
 </style>
@@ -54,8 +75,6 @@
 
   <div class="portfolio-text">
     <p>1/100スケールのミニチュアの私を、Google Earthを拡大表示したiPadの画面上に置く。上野から実家のある横浜までの25kmを、私が実際に歩くのと同じスピードでゆっくりとスクロールし、ミニュアと指を身体として帰省を試みる。</p>
-
-    
   </div>
 
   <div class="portfolio-image">
@@ -69,8 +88,11 @@
     <img src="img/wqd3.png" alt="Portfolio Image">
     <img src="img/wqd4.png" alt="Portfolio Image">
   </div>
-<iframe style="width: 70%; height: auto;" src="https://www.youtube.com/embed/XF8xHfJuRaU?si=u5WqROzTa1NHTorL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
- 
+  
+  <!-- YouTube動画を16:9のアスペクト比で表示 -->
+  <div class="youtube-container">
+    <iframe src="https://www.youtube.com/embed/XF8xHfJuRaU?si=u5WqROzTa1NHTorL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
  
  <footer id="footer">
     <p><a href="index.html">back</a></p>
