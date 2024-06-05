@@ -36,7 +36,7 @@
 .youtube-container {
   position: relative;
   width: 70%;
-  padding-bottom: 40%; /* YouTubeのアスペクト比16:9に対応 */
+  padding-bottom: 38%; /* YouTubeのアスペクト比16:9に対応 */
   height: 0;
   overflow: hidden;
   margin-bottom: 10px; /* 下側に余白を設定 */
@@ -79,7 +79,13 @@
 
 
   
-  <!-- 新しいクラスを適用 -->
+
+  <!-- YouTube動画を16:9のアスペクト比で表示 -->
+  <div class="youtube-container">
+    <iframe src="https://www.youtube.com/embed/XF8xHfJuRaU?si=u5WqROzTa1NHTorL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+    <!-- 新しいクラスを適用 -->
   <div class="image-block">
     <img src="img/wqd1.png" alt="Portfolio Image">
     <img src="img/wqd2.png" alt="Portfolio Image">
@@ -87,10 +93,6 @@
     <img src="img/wqd4.png" alt="Portfolio Image">
   </div>
   
-  <!-- YouTube動画を16:9のアスペクト比で表示 -->
-  <div class="youtube-container">
-    <iframe src="https://www.youtube.com/embed/XF8xHfJuRaU?si=u5WqROzTa1NHTorL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
  
  <footer id="footer">
     <p><a href="index.html">back</a></p>
