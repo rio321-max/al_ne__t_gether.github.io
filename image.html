@@ -5,10 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* マージンやパディングをリセット */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* リストスタイルを無効化 */
+    ul {
+      list-style: none;
+    }
+
+    #random-image-container {
+      margin: 10px auto; /* 左右のマージンを10pxに設定し、中央に配置 */
+    }
+
     #random-image-container img {
-      width: calc(100vw - 10px);  /* 幅をデバイスの幅に合わせる */
+      width: calc(100vw - 20px);  /* 幅をデバイスの幅に合わせる */
       height: calc(100vh - 20px); /* 高さをデバイスの高さに合わせる */
-      margin: 10px; /* 画像のマージンを10pxに設定 */
+      margin: 0; /* 画像のマージンをリセット */
+      padding: 10px; /* 画像の内側の余白を10pxに設定 */
+      box-sizing: border-box; /* paddingが幅を変えないようにbox-sizingを設定 */
     }
 
     @media only screen and (min-width: 600px) {
@@ -16,8 +33,15 @@
       #random-image-container img {
         width: calc(100vw - 20px);  /* 幅をデバイスの幅に合わせる */
         height: calc(100vh - 20px); /* 高さをデバイスの高さに合わせる */
-        margin: 10px; /* 画像のマージンを10pxに設定 */
+        margin: 0; /* 画像のマージンをリセット */
+        padding: 10px; /* 画像の内側の余白を10pxに設定 */
+        box-sizing: border-box; /* paddingが幅を変えないようにbox-sizingを設定 */
       }
+    }
+
+    #footer {
+      margin-top: 20px; /* フッターの上に20pxのマージンを追加 */
+      text-align: center; /* フッターのテキストを中央揃え */
     }
   </style>
 </head>
