@@ -51,6 +51,22 @@
     .portfolio-item {
       margin-bottom: 10px; /* 下側に余白を設定 */
     }
+
+    @media (max-width: 600px) {
+  .portfolio-image img {
+    width: 100%; /* 親要素に合わせて幅を100%に設定 */
+  }
+  .image-block img {
+    width: 100%; /* 親要素に合わせて幅を100%に設定 */
+    margin-bottom: 10px; /* 画像の下側の余白を設定 */
+  }
+  .portfolio-text {
+    max-width: 100%; /* テキストの幅を100%に制限 */
+  }
+  .youtube-container {
+    width: 100%; /* 親要素に合わせて幅を100%に設定 */
+  }
+}
   </style>
 </head>
 <body>
