@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>腕は腕だけのことしか出来ないでしょう</title>
+  <link rel="stylesheet" href="style.css">
+   <style>
+ /* 新しいクラスのスタイル */
+.image-block {
+  max-width: 70%; /* 全体の幅を70%に制限 */
+  display: flex; /* 画像を横並びに配置 */
+  flex-wrap: wrap; /* 必要に応じて折り返し */
+  gap: 10px; /* 画像間の間隔を設定 */
+  box-sizing: border-box; /* パディングとボーダーを含める */
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
+.image-block-2col {
+  max-width: 70%; /* 全体の幅を70%に制限 */
+  display: flex; /* 画像を横並びに配置 */
+  flex-wrap: wrap; /* 必要に応じて折り返し */
+  gap: 10px; /* 画像間の間隔を設定 */
+  box-sizing: border-box; /* パディングとボーダーを含める */
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
+.image-block-2col img {
+  width: calc(50% - 5px); /* ブロック全体の幅を2分割し、間隔を考慮 */
+  height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+}
+.portfolio-image img {
+  display: block; /* ブロック要素として設定 */
+  width: 70%; /* 親要素に合わせて幅を70%に設定 */
+  height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
+
+.portfolio-text {
+  max-width: 70%; /* テキストの幅を70%に制限 */
+  margin: 0 auto 10px; /* 上下に余白を設定し、左右を自動マージンにする */
+  margin-left: 0; /* 左のマージンを0に設定 */
+}
+
+/* YouTube動画のコンテナ */
+.youtube-container {
+  position: relative;
+  width: 70%;
+  padding-bottom: 40%; /* YouTubeのアスペクト比16:9に対応 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
+/* YouTube動画 */
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .portfolio-image img {
+    width: 100%; /* 親要素に合わせて幅を100%に設定 */
+  }
+  .image-block img {
+    width: 100%; /* 親要素に合わせて幅を100%に設定 */
+    margin-bottom: 10px; /* 画像の下側の余白を設定 */
+  }
+  .image-block-2col {
+  max-width: 100%; /* 全体の幅を70%に制限 */
+  display: flex; /* 画像を横並びに配置 */
+  flex-wrap: wrap; /* 必要に応じて折り返し */
+  gap: 10px; /* 画像間の間隔を設定 */
+  box-sizing: border-box; /* パディングとボーダーを含める */
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
+  .portfolio-text {
+    max-width: 100%; /* テキストの幅を100%に制限 */
+  }
+  .youtube-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 55%; /* YouTubeのアスペクト比16:9に対応 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px; /* 下側に余白を設定 */
+  }
+}
+</style>
+</head>
+<body>
+  <p>《腕は腕だけのことしか出来ないでしょう》インスタレーション 2023</p>
+  
+
+  <div class="image-block-2col">
+    <img src="img/fumi2.jpeg" alt="Portfolio Image">
+    <img src="img/fumi3.jpeg" alt="Portfolio Image">
+  </div>
+
+  <div class="portfolio-image">
+    <img src="img/fumi1.jpeg" alt="Portfolio Image">
+  </div>
+  
+  <div class="youtube-container">
+    <iframe src="https://www.youtube.com/embed/1RRxOjoJ3bs?si=If_kDNFP_raE__2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <div class="image-block-2col">
+    <img src="img/fumi5.jpeg" alt="Portfolio Image">
+    <img src="img/fumi6.jpeg" alt="Portfolio Image">
+  </div>
+
+
+     <div class="portfolio-text">
+    <p>台東区の小さなマンションの4階、当時一人暮らしをしていた一室でインタラクティブなインスタレーションの展示をおこなった。鑑賞者は私から鍵を受け取り階段を登って、靴を脱いで部屋に入る。1R（洋室4帖）の床にはモノが散乱している。部屋の奥の台の上に、ノートパソコンが置かれている。トラックパッドには、間取りと同じかたちをしたスタイロフォームが設置されている。</p>
+  </div>
+
+ 
+  
+ <footer id="footer">
+    <p><a href="m_n_.html">back</a></p>
+    <p>&copy; 2024 al_ne__t_gether</p>
+</footer>
+</body>
+</html>
