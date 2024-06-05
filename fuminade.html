@@ -15,8 +15,8 @@
   box-sizing: border-box; /* パディングとボーダーを含める */
   margin-bottom: 10px; /* 下側に余白を設定 */
 }
-.image-block img {
-  width: calc(25% - 7.5px); /* ブロック全体の幅を4分割し、間隔を考慮 */
+.image-block-2col img {
+  width: calc(50% - 5px); /* ブロック全体の幅を2分割し、間隔を考慮 */
   height: auto; /* アスペクト比を保持するために高さを自動に設定 */
 }
 .portfolio-image img {
@@ -75,11 +75,11 @@
 <body>
   <p>《踏み入る、撫で入る》インスタレーション 2023</p>
   
-   <div class="portfolio-image">
-    <img src="fumi2.jpeg" alt="Portfolio Image">
+
+  <div class="image-block-2col">
+    <img src="img/fumi2.jpeg" alt="Portfolio Image">
+    <img src="img/fumi3.jpeg" alt="Portfolio Image">
   </div>
-  
-  
   
   <div class="youtube-container">
     <iframe src="https://www.youtube.com/embed/XF8xHfJuRaU?si=u5WqROzTa1NHTorL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
