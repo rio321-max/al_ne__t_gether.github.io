@@ -7,19 +7,22 @@
   <style>
     #random-image-container img {
       display: block; /* ブロックレベルの要素に設定 */
-      width: calc(100vw - 40px);  /* 幅をデバイスの幅に合わせる (左右に20pxずつのパディングを考慮) */
+      width: calc(100vw - 40px);  /* デバイスの幅に合わせる (左右に20pxずつのパディングを考慮) */
       height: auto; /* 高さを自動に設定 */
-      margin: 10px auto 10px 20px; /* 上下のマージンを10px、左のマージンを20pxに設定 */
+      margin: 10px 0; /* 上下のマージンを10px、左右のマージンを0に設定 */
     }
 
     @media only screen and (min-width: 600px) {
-      /* 画面幅が600px以上の場合のスタイル */
       #random-image-container img {
         display: block; /* ブロックレベルの要素に設定 */
-        width: calc(100vw - 40px);  /* 幅をデバイスの幅に合わせる (左右に20pxずつのパディングを考慮) */
+        width: calc(100vw - 40px);  /* デバイスの幅に合わせる (左右に20pxずつのパディングを考慮) */
         height: auto; /* 高さを自動に設定 */
-        margin: 10px auto 10px 20px; /* 上下のマージンを10px、左のマージンを20pxに設定 */
+        margin: 10px 0; /* 上下のマージンを10px、左右のマージンを0に設定 */
       }
+    }
+
+    #random-image-container {
+      padding-left: 20px; /* 左のパディングを20pxに設定 */
     }
   </style>
 </head>
@@ -53,9 +56,10 @@
     });
   </script>
   
- <footer id="footer">
+  <footer id="footer">
     <p><a href="others.html">back</a></p>
     <p>&copy; 2024 al_ne__t_gether</p>
- </footer>  
+  </footer>  
 </body>
 </html>
+
