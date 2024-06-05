@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     #random-image-container img {
-      width: 100vw;  /* 幅をデバイスの幅に合わせる */
-      height: 100vh; /* 高さをデバイスの高さに合わせる */
+      width: calc(100vw - 20px);  /* 幅をデバイスの幅に合わせる */
+      height: calc(100vh - 20px); /* 高さをデバイスの高さに合わせる */
+      margin: 10px; /* 画像のマージンを10pxに設定 */
     }
 
     @media only screen and (min-width: 600px) {
       /* 画面幅が600px以上の場合のスタイル */
       #random-image-container img {
-        width: 100vw;  /* 幅をデバイスの幅に合わせる */
-        height: 100vh; /* 高さをデバイスの高さに合わせる */
+        width: calc(100vw - 20px);  /* 幅をデバイスの幅に合わせる */
+        height: calc(100vh - 20px); /* 高さをデバイスの高さに合わせる */
+        margin: 10px; /* 画像のマージンを10pxに設定 */
       }
     }
   </style>
