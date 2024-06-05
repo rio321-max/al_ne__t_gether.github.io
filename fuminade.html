@@ -66,6 +66,14 @@
     width: 100%; /* 親要素に合わせて幅を100%に設定 */
     margin-bottom: 10px; /* 画像の下側の余白を設定 */
   }
+  .image-block-2col {
+  max-width: 100%; /* 全体の幅を70%に制限 */
+  display: flex; /* 画像を横並びに配置 */
+  flex-wrap: wrap; /* 必要に応じて折り返し */
+  gap: 10px; /* 画像間の間隔を設定 */
+  box-sizing: border-box; /* パディングとボーダーを含める */
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
   .portfolio-text {
     max-width: 100%; /* テキストの幅を100%に制限 */
   }
