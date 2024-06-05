@@ -27,6 +27,25 @@
     /* 特定のクラスに対してリンクの色を黒に設定 */
     .black-link {
       color: black !important; /* 強制的に黒色に設定 */
+
+
+    /* YouTube動画のコンテナ */
+.youtube-container {
+  position: relative;
+  width: 70%;
+  padding-bottom: 39%; /* YouTubeのアスペクト比16:9に対応 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px; /* 下側に余白を設定 */
+}
+/* YouTube動画 */
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
     }
   </style>
 </head>
