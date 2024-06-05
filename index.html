@@ -11,37 +11,51 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
       .site-title img {
-        width: 800px; /* 画像の幅を指定 */
-        margin: 20px 20px; /* 左右に20pxの空白を追加 */
+        width: 100%; /* 親要素に合わせて幅を調整 */
+        max-width: 100%; /* 最大幅を100%に設定 */
+        display: block; /* ブロック要素として設定 */
+        margin: 0; /* マージンをリセット */
+        padding: 0; /* パディングをリセット */
       }
 
-       }
       /* リストアイテムの間に1pxの余白を追加 */
       nav ul li {
         margin-bottom: 1.3px;
       }
 
-     </style>
+      /* スマートフォン用のスタイル */
+      @media only screen and (max-width: 600px) {
+        .site-title img {
+          width: calc(100% - 20px); /* スマートフォンでは左右に10pxの空白を追加 */
+          max-width: none; /* 最大幅の制限を解除 */
+          margin: 20px 10px; /* 上下に20px、左右に10pxの空白を追加 */
+        }
 
-</head>
+        body {
+          padding: 0 10px; /* 左右のパディングを10pxに設定 */
+        }
+      }
+    </style>
+  </head>
 
-<body>
-  <header id="header">
-    <h1 class="site-title"><a href="index.html"><img src="img/ssee3.png" alt="al_ne__t_gether"></a></h1>
-    <nav>
-      <ul>
-        <li><a href="k_t_.html"><p>こと</p></a></li>
-        <li><a href="m_n_.html"><p>もの</p></a></li>
-        <li><a href="others.html"><p>とか</p></a></li>
-        <li><a href="process.html"><p>やり方</p></a></li>
-        <li><a href="mtu.html"><p>受け止められない身体</p></a></li>
-        <li><a href="https://www.instagram.com/al_ne__t_gether/" target="_blank"><p>Instagram</p></a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html"><img src="img/ssee3.png" alt="al_ne__t_gether"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="k_t_.html"><p>こと</p></a></li>
+          <li><a href="m_n_.html"><p>もの</p></a></li>
+          <li><a href="others.html"><p>とか</p></a></li>
+          <li><a href="process.html"><p>やり方</p></a></li>
+          <li><a href="mtu.html"><p>受け止められない身体</p></a></li>
+          <li><a href="https://www.instagram.com/al_ne__t_gether/" target="_blank"><p>Instagram</p></a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer id="footer">
-    <p>&copy; 2024 al_ne__t_gether</p>
-  </footer>
-</body>
+    <footer id="footer">
+      <p>&copy; 2024 al_ne__t_gether</p>
+    </footer>
+  </body>
 </html>
+
