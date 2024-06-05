@@ -62,10 +62,15 @@
   }
   .portfolio-text {
     max-width: 100%; /* テキストの幅を100%に制限 */
-  }
-  .youtube-container {
-    width: 100%; /* 親要素に合わせて幅を100%に設定 */
-  }
+  } /* YouTube動画のコンテナ */
+    .youtube-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 45%; /* YouTubeのアスペクト比16:9に対応 */
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 10px; /* 下側に余白を設定 */
+    }
 }
   </style>
 </head>
