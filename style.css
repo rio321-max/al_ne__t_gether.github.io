@@ -14,8 +14,9 @@ h1 {
 }
 
 h2 { 
-  font-size: 71% 
-  font-weight: normal;
+  font-size: 70%;  /* font-sizeは16pxの62.5%の10px */
+  font-family: 'Yu Gothic', sans-serif;
+  font-weight: 400;
 }
 
 body {
