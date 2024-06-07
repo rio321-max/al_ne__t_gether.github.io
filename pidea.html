@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>やり方</title>
+  <title>やりかた</title>
   <link rel="stylesheet" href="style.css">
   <style>
     /* テキストの幅を調整 */
@@ -11,21 +11,39 @@
       width: 30%;
     }
 
-       /* スマートフォンの画面幅に対するスタイル */
+    /* スマートフォンの画面幅に対するスタイル */
     @media (max-width: 768px) {
       p {
         width: 90%; /* スマートフォンの場合、幅を90%に設定 */
       }
     }
-    
   </style>
 </head>
 
 <body>
-   <p>あ</p>
- <footer id="footer">
+  <p id="random-text"></p>
+  <footer id="footer">
     <p><a href="index.html">back</a></p>
     <p>&copy; 2024 al_ne__t_gether</p>
-</footer>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // ランダムに表示する文章のリスト
+      const texts = [
+        "今日は良い天気ですね。",
+        "昨日の映画は面白かった。",
+        "明日は休みです。",
+        "コーヒーが飲みたい。",
+        "新しいプロジェクトが始まります。"
+      ];
+
+      // ランダムにインデックスを選ぶ
+      const randomIndex = Math.floor(Math.random() * texts.length);
+
+      // ランダムな文章を選び、<p>要素に表示する
+      document.getElementById("random-text").innerText = texts[randomIndex];
+    });
+  </script>
 </body>
 </html>
