@@ -4,6 +4,25 @@
 <head>
     <link href="style.css" rel="stylesheet" />
     <style>
+            /* テキストの幅を調整 */
+    h1{
+        width: 40%
+    }
+        
+    p {
+      width: 40%;
+    }
+
+       /* スマートフォンの画面幅に対するスタイル */
+    @media (max-width: 768px) {
+      p {
+        width: 90%; /* スマートフォンの場合、幅を90%に設定 */
+      }
+          h1{
+        width: 90%
+    }
+    }
+    
         h1{
             font-size: 5rem
         }
