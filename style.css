@@ -76,6 +76,13 @@ li {
 
 @media only screen and (max-width: 600px) {
   /* 画面幅が600px以下の場合のスタイル */
+
+  html {
+  font-size: 60%;  /* font-sizeは16pxの62.5%の10px */
+  font-family: 'Yu Gothic', sans-serif;
+  font-weight: 400;
+}
+
   body {
     font-size: 70%; /* ここは任意で調整 */
     padding: 15px 15px; /* 左右のマージンを10pxに調整 */
