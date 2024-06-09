@@ -32,8 +32,25 @@
       }
     }
 
+    /* 消えるアニメーション */
+    @keyframes disappear {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     .blink {
       animation: blink 0.5s linear;
+    }
+
+    .disappear {
+      animation: disappear 0.5s linear;
     }
   </style>
 </head>
@@ -74,12 +91,15 @@
   // テキストの点滅をランダムな間隔でトリガーする関数
   function randomBlink() {
     const text = document.getElementById('blinkingText');
-    text.classList.add('blink');
+    
+    // ランダムにblinkかdisappearのクラスを追加
+    const isDisappear = Math.random() > 0.5;
+    text.classList.add(isDisappear ? 'disappear' : 'blink');
 
     // ランダムな間隔 (0.5秒から5秒の間) で点滅をトリガー
     const randomInterval = Math.random() * 4500 + 500;
     setTimeout(() => {
-      text.classList.remove('blink');
+      text.classList.remove(isDisappear ? 'disappear' : 'blink');
       setTimeout(randomBlink, randomInterval);
     }, 500);
   }
