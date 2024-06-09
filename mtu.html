@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <link href="style.css" rel="stylesheet" />
     <style>
-            /* テキストの幅を調整 */
-    h1{
-        width: 65%
-    }
-        
-    p {
-      width: 65%;
-    }
-
-       /* スマートフォンの画面幅に対するスタイル */
-    @media (max-width: 768px) {
-      p {
-        width: 100%; /* スマートフォンの場合、幅を90%に設定 */
-      }
-          h1{
-        width: 100%
-    }
-    }
-    
-        h1{
-            font-size: 5rem
+        /* テキストの幅を調整 */
+        h1 {
+            width: 65%;
         }
-        
+        p {
+            width: 65%;
+        }
+
+        /* スマートフォンの画面幅に対するスタイル */
+        @media (max-width: 768px) {
+            h1, p {
+                width: 100%; /* スマートフォンの場合、幅を100%に設定 */
+            }
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
         p {
             font-size: 1.6rem; /* 16px 相当のフォントサイズ */
         }
     </style>
 </head>
-
 <body>
     <h1>ここにある、うけとめる、うけとめられない</h1>
     <div class="content">
@@ -43,11 +36,8 @@
             2) Hold your smartphone in front of you and move your body in the same way as the person taking the video. For example: If the video is of a person running, run. If the video is of a person looking around, move your arms together to look around.<br /><br />
         </p>
     </div>
-
-      <footer id="footer">
+    <footer id="footer">
         <p>&copy; 2024 al_ne__t_gether</p>
     </footer>
-    
 </body>
-
 </html>
