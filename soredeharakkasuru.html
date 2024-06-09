@@ -9,7 +9,7 @@
   <style>
     /* テキストの幅を調整 */
     p {
-      width: 37%;
+      width: 39%;
     }
 
     /* スマートフォンの画面幅に対するスタイル */
@@ -18,16 +18,11 @@
         width: 90%; /* スマートフォンの場合、幅を90%に設定 */
       }
     }
-
-    /* 瞬間的に消えるクラス */
-    .hidden {
-      opacity: 0;
-    }
   </style>
 </head>
 
 <body>
-  <p id="blinkingText">蛾が二人の手のひらに重なる。穴は閉じていなくてもあいているし、その逆も然り。触覚は順序をもたないから、手の器から漏れ出していく。
+  <p>蛾が二人の手のひらに重なる。穴は閉じていなくてもあいているし、その逆も然り。触覚は順序をもたないから、手の器から漏れ出していく。
 シリコンのGIFになっていて、繰り返されている。<br><br>
 スマホを握る手と、種子の羽に、世界の突起や他の経験を接続する。机に置いてある。声変わりしたから、言葉で動きを説明する。<br><br>
 空っぽの椅子と光を集め終える／紐にして結える/画面の夢を見る/ベッドに横になる時間増やす／無料にする／デート中にも光らせる／怖い場合は手を握る／喉に手を当てながら、ダブルになる／誰かの代わりだと思って手入れをする／ドアをゆっくりと閉める<br><br>
@@ -57,29 +52,7 @@
     <p><a href="others.html">back</a></p>
     <p>&copy; 2024 al_ne__t_gether</p>
 </footer>
-
-<script>
-  // テキストの点滅をランダムな間隔でトリガーする関数
-  function randomBlink() {
-    const text = document.getElementById('blinkingText');
-    const blinks = Math.floor(Math.random() * 3) + 3; // 3から5回のランダムな点滅回数
-
-    for (let i = 0; i < blinks; i++) {
-      setTimeout(() => {
-        text.classList.add('hidden');
-        setTimeout(() => {
-          text.classList.remove('hidden');
-        }, 100); // 0.1秒後に再表示
-      }, i * 200); // 0.2秒ごとに点滅
-    }
-
-    // 約1分後に再び点滅
-    const randomInterval = 60000; // 1分 (60秒)
-    setTimeout(randomBlink, randomInterval);
-  }
-
-  document.addEventListener('DOMContentLoaded', randomBlink);
-</script>
 </body>
 </html>
+
 
