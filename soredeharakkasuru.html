@@ -62,12 +62,16 @@
   // テキストの点滅をランダムな間隔でトリガーする関数
   function randomBlink() {
     const text = document.getElementById('blinkingText');
-    
-    // 一瞬だけ非表示にする
-    text.classList.add('hidden');
-    setTimeout(() => {
-      text.classList.remove('hidden');
-    }, 100); // 0.1秒後に再表示
+    const blinks = Math.floor(Math.random() * 3) + 3; // 3から5回のランダムな点滅回数
+
+    for (let i = 0; i < blinks; i++) {
+      setTimeout(() => {
+        text.classList.add('hidden');
+        setTimeout(() => {
+          text.classList.remove('hidden');
+        }, 100); // 0.1秒後に再表示
+      }, i * 200); // 0.2秒ごとに点滅
+    }
 
     // 約1分後に再び点滅
     const randomInterval = 60000; // 1分 (60秒)
@@ -78,5 +82,4 @@
 </script>
 </body>
 </html>
-
 
