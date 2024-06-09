@@ -19,38 +19,9 @@
       }
     }
 
-    /* 点滅アニメーション */
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.8;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    /* 消えるアニメーション */
-    @keyframes disappear {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .blink {
-      animation: blink 0.5s linear;
-    }
-
-    .disappear {
-      animation: disappear 0.5s linear;
+    /* 瞬間的に消えるクラス */
+    .hidden {
+      opacity: 0;
     }
   </style>
 </head>
@@ -92,17 +63,24 @@
   function randomBlink() {
     const text = document.getElementById('blinkingText');
     
-    // ランダムにblinkかdisappearのクラスを追加
-    const isDisappear = Math.random() > 0.5;
-    text.classList.add(isDisappear ? 'disappear' : 'blink');
+    // ランダムにクラスを追加・削除
+    const isHidden = Math.random() > 0.5;
+    if (isHidden) {
+      text.classList.add('hidden');
+    } else {
+      text.classList.remove('hidden');
+    }
 
     // ランダムな間隔 (0.5秒から5秒の間) で点滅をトリガー
     const randomInterval = Math.random() * 4500 + 500;
-    setTimeout(() => {
-      text.classList.remove(isDisappear ? 'disappear' : 'blink');
-      setTimeout(randomBlink, randomInterval);
-    }, 500);
+    setTimeout(randomBlink, randomInterval);
   }
+
+  document.addEventListener('DOMContentLoaded', randomBlink);
+</script>
+</body>
+</html>
+
 
   document.addEventListener('DOMContentLoaded', randomBlink);
 </script>
