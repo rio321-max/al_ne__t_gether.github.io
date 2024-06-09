@@ -63,16 +63,14 @@
   function randomBlink() {
     const text = document.getElementById('blinkingText');
     
-    // ランダムにクラスを追加・削除
-    const isHidden = Math.random() > 0.5;
-    if (isHidden) {
-      text.classList.add('hidden');
-    } else {
+    // 一瞬だけ非表示にする
+    text.classList.add('hidden');
+    setTimeout(() => {
       text.classList.remove('hidden');
-    }
+    }, 100); // 0.1秒後に再表示
 
-    // ランダムな間隔 (0.5秒から5秒の間) で点滅をトリガー
-    const randomInterval = Math.random() * 4500 + 500;
+    // 約1分後に再び点滅
+    const randomInterval = 60000; // 1分 (60秒)
     setTimeout(randomBlink, randomInterval);
   }
 
@@ -81,9 +79,4 @@
 </body>
 </html>
 
-
-  document.addEventListener('DOMContentLoaded', randomBlink);
-</script>
-</body>
-</html>
 
