@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>テキストエディタ</title>
+    <title>めも</title>
     <style>
         html {
             font-size: 67%;
@@ -113,7 +113,6 @@
             border: none;
             border-radius: 4px;
             resize: none;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;  /* スクロールバーを隠す */
         }
     </style>
@@ -132,5 +131,11 @@
         document.getElementById('editor').addEventListener('input', autoResize);
         window.onload = autoResize;  // ページロード時に初期化
     </script>
+
+    <footer id="footer">
+        <p><a href="index.html">back</a></p>
+        <p>&copy; 2024 al_ne__t_gether</p>
+    </footer>
+    
 </body>
 </html>
