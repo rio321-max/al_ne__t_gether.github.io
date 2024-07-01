@@ -1,5 +1,5 @@
 html {
-  font-size: 67%;  /* font-sizeは16pxの62.5%の10px */
+  font-size: 67%;  /* font-sizeは16pxの67%の10.67px */
   font-family: 'Yu Gothic', sans-serif;
   font-weight: 370;
 }
@@ -29,15 +29,15 @@ body {
 
 a {
   text-decoration: underline;
-  color: #0000ff;
+  color: #0000ff; /* リンクのデフォルトの色を青に設定 */
 }
 
 a:hover {
-  color: #ff002b;
+  color: #ff002b; /* ホバー時の色を赤に設定 */
 }
 
 a:visited {
-  color: #0000ff; /* 親要素の色を継承する */
+  color: #0000ff; /* 見た目を維持するために、訪問済みリンクも青に設定 */
 }
 
 img {
@@ -79,10 +79,10 @@ li {
   /* 画面幅が600px以下の場合のスタイル */
 
   html {
-  font-size: 64%;  /* font-sizeは16pxの62.5%の10px */
-  font-family: 'Yu Gothic', sans-serif;
-  font-weight: 400;
-}
+    font-size: 64%;  /* font-sizeは16pxの64%の10px */
+    font-family: 'Yu Gothic', sans-serif;
+    font-weight: 400;
+  }
 
   body {
     font-size: 70%; /* ここは任意で調整 */
@@ -104,4 +104,3 @@ li {
     font-size: 0.8rem; /* キャプションのフォントサイズを小さく */
   }
 }
-
