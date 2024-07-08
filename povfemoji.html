@@ -7,8 +7,26 @@
   <title>POV Middle Finger Emoji</title>
   <link rel="stylesheet" href="style.css">
   <style>
-   
+   .image-block {
+      max-width: 70%; /* 全体の幅を70%に制限 */
+      display: flex; /* 画像を横並びに配置 */
+      flex-wrap: wrap; /* 必要に応じて折り返し */
+      gap: 10px; /* 画像間の間隔を設定 */
+      box-sizing: border-box; /* パディングとボーダーを含める */
+      margin-bottom: 10px; /* 下側に余白を設定 */
+    }
+    .image-block img {
+      width: calc(25% - 7.5px); /* ブロック全体の幅を4分割し、間隔を考慮 */
+      height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+      margin-bottom: 0; /* 下側の余白をなしに設定 */
+    }
+    .portfolio-image img {
+      display: block; /* ブロック要素として設定 */
+      width: 70%; /* 親要素に合わせて幅を70%に設定 */
+      height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+      margin-bottom: 10px; /* 下側に余白を設定 */
 
+      
    .helvetica-normal-text {
             font-family: 'Helvetica', sans-serif;
             font-style: normal;
@@ -22,13 +40,17 @@
             font-style: italic;
             font-weight: 400;
         }
-
-    .large-text {
-            font-size: 3em; /* 文字サイズを大きくする */
-
-        @media (max-width: 600px) {
-      img {
-        max-width: 15%; /* 画像の最大幅を90%に設定 */
+    }
+    @media (max-width: 600px) {
+      .portfolio-image img {
+        width: 100%; /* 親要素に合わせて幅を100%に設定 */
+      }
+      .image-block {
+        max-width: 100%; /* 全体の幅を100%に制限 */
+      }
+      .image-block img {
+        width: calc(50% - 5px); /* 2分割した幅に設定 */
+        margin-bottom: 0; /* 下側の余白をなしに設定 */
       }
     }
     
@@ -43,7 +65,7 @@
   
     <p>
             <span class="helvetica-italic">POV Middle Finger Emoji</span>
-            <span class="helvetica-normal-text"> ,2024<br><br>NETWORKPRINT→Document print (LAWSON, FamilyMart etc...): EJRKQJ4F73<br>for purposes of nonprofit and private use only</span>
+            <span class="helvetica-normal-text"> ,2024<br><br>NETWORKPRINT→ Document print (LAWSON, FamilyMart etc...)<br>User Number: EJRKQJ4F73<br>for purposes of nonprofit and private use only</span>
         </p>
   
   <footer id="footer">
