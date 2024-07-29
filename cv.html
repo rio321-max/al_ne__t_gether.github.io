@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/icon.png">
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 新しいクラスのスタイル */
+    .image-block {
+      max-width: 70%; /* 全体の幅を70%に制限 */
+      display: flex; /* 画像を横並びに配置 */
+      flex-wrap: wrap; /* 必要に応じて折り返し */
+      gap: 10px; /* 画像間の間隔を設定 */
+      box-sizing: border-box; /* パディングとボーダーを含める */
+      margin-bottom: 10px; /* 下側に余白を設定 */
+    }
+    .image-block img {
+      width: calc(25% - 7.5px); /* ブロック全体の幅を4分割し、間隔を考慮 */
+      height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+      margin-bottom: 0; /* 下側の余白をなしに設定 */
+    }
+    .portfolio-image img {
+      display: block; /* ブロック要素として設定 */
+      width: 70%; /* 親要素に合わせて幅を70%に設定 */
+      height: auto; /* アスペクト比を保持するために高さを自動に設定 */
+      margin-bottom: 10px; /* 下側に余白を設定 */
+    }
+    @media (max-width: 600px) {
+      .portfolio-image img {
+        width: 100%; /* 親要素に合わせて幅を100%に設定 */
+      }
+      .image-block {
+        max-width: 100%; /* 全体の幅を100%に制限 */
+      }
+      .image-block img {
+        width: calc(50% - 5px); /* 2分割した幅に設定 */
+        margin-bottom: 0; /* 下側の余白をなしに設定 */
+      }
+    }
+  </style>
+</head>
+<body style="margin-top: -7px;">
+
+  <p>ダンス作戦会議 パレスチナ連帯集会, 6/16 2024<br/>不和のアート：芸術と民主主義 vol. 2, 6/14~6/16 2024</p>
+
+
+  <footer id="footer">
+    <p><a href="k_t_.html">back</a></p>
+    <p>&copy; 2024 al_ne__t_gether</p>
+  </footer>
+</body>
+</html>
